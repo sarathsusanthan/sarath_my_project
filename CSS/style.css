@@ -5,7 +5,7 @@
 /* homepage bg */
 .homepage{
     background-size: cover;
-    background-color: rgb(130, 236, 201);
+    background-color: rgb(10, 10, 10);
     background-repeat: no-repeat;
 }
 
@@ -21,14 +21,18 @@
     background-image:url(../IMAGES/green.jpg);
     background-repeat: no-repeat;
 }
+/* brochurepage bg */
+.brochurepage{
+    background-color: rgb(7, 7, 7);
+}
 /* nav tags hover */
 #atags{
     
-    background-color: rgb(252, 248, 248);
-    color:black;
+    background-color: rgba(12, 12, 12, 0.404);
+    color:rgb(252, 247, 247);
 }
 #atags:hover{
-    background-color: rgb(9, 148, 71);
+    background-color: rgb(7, 7, 7);
     color:white;
 }
 /* login button hover */
@@ -41,7 +45,7 @@
 }
 #inputform{
     background-size: cover;
-    background-image: url(../IMAGES/kalari.jpg);
+    background-color: rgba(10, 10, 10, 0.596);
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 3%;
@@ -50,7 +54,7 @@
 
 }
 #inputform button{
-    background-color: rgb(2, 27, 252);
+    background-color: rgb(8, 8, 8);
     color:white;
 }
 #inputform label{
