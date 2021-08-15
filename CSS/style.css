@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* homepage bg */
+.homepage{
+    background-size: cover;
+    background-color: rgb(130, 236, 201);
+    background-repeat: no-repeat;
+}
+
+/*  login page bg */
+.loginpage{
+    background-size: cover;
+    background-image: url(../IMAGES/kathakali.jpg);
+    background-repeat: no-repeat;
+}
+/* joinpage */
+.joinpage{
+    background-size: cover;
+    background-image:url(../IMAGES/green.jpg);
+    background-repeat: no-repeat;
+}
+/* nav tags hover */
+#atags{
+    
+    background-color: rgb(252, 248, 248);
+    color:black;
+}
+#atags:hover{
+    background-color: rgb(9, 148, 71);
+    color:white;
+}
+/* login button hover */
+#loginbutton:hover{
+    border: 2px solid white;
+}
+/* input form alignment in join page */
+#inputform input{
+    float: right;
+}
+#inputform{
+    background-size: cover;
+    background-image: url(../IMAGES/kalari.jpg);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    margin-bottom: 2%;
+    border-radius: 3%;
+
+}
+#inputform button{
+    background-color: rgb(2, 27, 252);
+    color:white;
+}
+#inputform label{
+    color: rgb(252, 248, 248);
+    font-style: italic;
+}
