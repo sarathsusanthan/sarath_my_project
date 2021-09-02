@@ -12,13 +12,13 @@
 /*  login page bg */
 .loginpage{
     background-size: cover;
-    background-image: url(IMAGES/kathakali.jpg);
+    background-image: url(../IMAGES/kathakali.jpg);
     background-repeat: no-repeat;
 }
 /* joinpage */
 .joinpage{
     background-size: cover;
-    background-image:url(IMAGES/green.jpg);
+    background-image:url(../IMAGES/green.jpg);
     background-repeat: no-repeat;
 }
 /* brochurepage bg */
