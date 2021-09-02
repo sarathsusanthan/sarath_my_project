@@ -4,10 +4,9 @@
     <title>KERALA TOURISM</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="../JS/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </head>
 <body class="loginpage">
     <!-- navbar start -->
@@ -28,12 +27,14 @@
     <!-- navbar end  -->
     <!-- login form start -->
 
-    <form class="px-5 py-3 mt-5 mx-5" style=" border:4px solid rgb(8, 8, 8); background-color: rgba(12, 12, 12, 0.267); float: left; border-radius: 5%;" action="#">
+    <form class="px-5 py-3 mt-5 mx-5" onsubmit="return check();" style=" border:4px solid rgb(8, 8, 8); background-color: rgba(12, 12, 12, 0.774); float: left; border-radius: 5%;" action="book.html">
         <h2 class="text-center" style="color: rgb(246, 246, 250);" >Log in</h2><br>
         <label style="color: white;">User name</label><br>
-        <input style="width: 100%;" type="text" placeholder="E-mail or Mobile no"><br>
+        <input style="width: 100%;" type="text" onkeyup="check();" id="user" placeholder="E-mail id"><br>
+        <label id="uer"></label><br>
         <label style="color: white;">Password</label><br>
-        <input style="width: 100%;" type="password" placeholder="6-digit password"><br><br>
+        <input style="width: 100%;" id="paswd" type="password" onkeyup="check();" placeholder="Enter password"><br>
+        <label id="paser"></label><br><br>
         <button id="loginbutton" class="text-white rounded" style="width: 100%; background-color: rgb(27, 49, 248);" type="submit">Login</button><br><br>
         <a style="font-size: smaller; color: rgb(36, 10, 185);" href="#">forgot password</a>
         <p class="text-white">Don't have an account? <a style="color: rgb(22, 10, 197);" href="join.html">signup</a></p>
@@ -48,5 +49,7 @@
         </footer>
       </div> 
        <!-- footer end  --> 
+
+       <script src="JS/login.js"></script>
 </body>
 </html>

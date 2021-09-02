@@ -4,10 +4,9 @@
     <title>KERALA TOURISM</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="../JS/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </head>
 <body class="joinpage">
     <!-- navbar start -->
@@ -29,22 +28,32 @@
 
     <!-- signup form start -->
 
-       <form action="#" id="inputform" style="border: 2px solid rgb(12, 12, 12); margin-top: 1%; margin-left: 18%; margin-right: 18%;">
-        <h2 class="text-center text-white my-2">Create an account</h2><br><br>
+       <form action="success.html" id="inputform" onsubmit="return validate();" style="border: 2px solid rgb(12, 12, 12); margin-top: 1%; margin-left: 18%; margin-right: 18%;">
+        <h2 class="text-center text-white my-3">CREATE AN ACCOUNT</h2><hr><br><br>
         <label style="margin-right: 5%; font-size: 20px;">Name:</label>
-        <input type="text" placeholder="Enter your name"><br><br>
+        <input type="text" onkeyup="validate();" placeholder="Enter your name" style="width: 65%;" id="name"><br>
+        <label style="margin-left: 35%;" id="namer"></label><br><br>
         <label style="margin-right: 5%; font-size: 20px;">Adress:</label>
-        <input type="text" placeholder="Adress line 1"><br><br>
-        <input style="margin-left: 10%;" type="text" placeholder="Adress line 2"><br><br>
-        <input style="margin-left: 10%;" type="text" placeholder="Adress line 3"><br><br>
+        <input type="text"onkeyup="validate();" placeholder="Adress line 1"  style="width: 65%;" id="adrs"><br>
+        <label style="margin-left: 35%;" id="ader"></label><br>
+        <input style="margin-left: 10%; width: 65%;" type="text"   placeholder="Adress line 2"><br><br>
+        <input style="margin-left: 10%; width: 65%;" type="text"  placeholder="Adress line 3"><br><br><br>
         <label style="margin-right: 5%; font-size: 20px;">E-mail:</label>
-        <input type="email" placeholder="Enter your email id"><br><br>
+        <input type="text" onkeyup="validate();" placeholder="Enter your email id"  style="width: 65%;" id="em"><br>
+        <label style="margin-left: 35%;" id="emer"></label><br><br>
         <label style="margin-right: 5%; font-size: 20px;">Mobile no:</label>
-        <input type="text" placeholder="Enter mobile no."><br><br>
+        <input type="text" onkeyup="validate();" placeholder="Enter mobile no."  style="width: 65%;" id="mob"><br>
+        <label style="margin-left: 35%;" id="mer"></label><br><br>
         <label style="margin-right: 5%; font-size: 20px;">Password:</label>
-        <input type="password" placeholder="Enter six digit password"><br><br>
+        <input type="password" onkeyup="validate();" placeholder="Enter six digit password"  style="width: 65%;" id="pw"><br>
+        <p style="font-size: 16px; float: right;" class="text-white">show password<input class="my-2 mx-2" type="checkbox" onclick="tog();"></p>
+        <meter id="met" style="margin-left: 35%;" max="15" min="0" value="0" high="8" low="5" optimum="10"></meter><br>
+        <div style="padding-left: 25%; margin-left: 10%;" class="text-white"><p>Password must contain</p><div class="d-flex"><p style="margin-left: 5px;margin-right: 5px;">8 characters</p><img id="et" style="height: 20px;" src="IMAGES/black.jpg" alt=""><p style="margin-left: 5px;margin-right: 5px;">Uppercase</p><img id="up" style="height: 20px;" src="IMAGES/black.jpg" alt="">
+          <p style="margin-left: 2%;margin-right: 5px;">Lowercase</p><img id="lw" style="height: 20px;" src="IMAGES/black.jpg" alt=""><p style=" margin-left: 2%;margin-right: 5px;">Number</p><img id="nm" style="height: 20px;" src="IMAGES/black.jpg" alt=""></div></div>
+        <label style="margin-left: 35%;" id="per"></label><br><br>
         <label style="margin-right: 5%; font-size: 20px;">Conform password:</label>
-        <input type="password" placeholder="Re-enter password"><br><br>
+        <input type="password" onkeyup="validate();" placeholder="Re-enter password"  style="width: 65%;" id="cpw"><br>
+        <label style="margin-left: 35%;" id="cper"></label><br><br>
         <button class="rounded" style="width: 100%;" type="submit">Signup</button>
        </form>
        <!-- signup form end -->
@@ -56,6 +65,7 @@
       </footer>
     </div> 
      <!-- footer end  --> 
+     <script src="JS/join.js"></script>
 
        
     
