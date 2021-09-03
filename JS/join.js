@@ -116,6 +116,7 @@ function paswd(){
         up.setAttribute("src","IMAGES/black.jpg");
         lw.setAttribute("src","IMAGES/black.jpg");
         nm.setAttribute("src","IMAGES/black.jpg");
+        et.setAttribute("src","IMAGES/black.jpg");
         per.innerHTML="Password can not be empty."
         per.style.color="red";
         pwd.style.border="2px solid red";
